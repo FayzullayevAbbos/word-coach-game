@@ -1,0 +1,56 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.a-variant,
+.b-variant {
+  padding: 10px 20px;
+  color: aliceblue;
+  background: #5804ff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.modal-cont {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.44);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(255, 255, 255, 0.46);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  width: 300px;
+  height: 200px;
+  background: rgb(218, 213, 213);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.back{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    user-select: none;
+}
